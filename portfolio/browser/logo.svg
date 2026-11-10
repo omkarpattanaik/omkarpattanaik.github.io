@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="logoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="50%" stop-color="#1d4ed8" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="cyanStem" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <filter id="logoGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#020617" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <!-- Squircle Base -->
+  <rect x="24" y="24" width="464" height="464" rx="112" fill="url(#logoBg)" filter="url(#logoGlow)" />
+  <rect x="24" y="24" width="464" height="464" rx="112" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="4.5" />
+
+  <!-- Monogram OP -->
+  <g>
+    <!-- O Ring (White) -->
+    <circle cx="172" cy="256" r="82" fill="none" stroke="#ffffff" stroke-width="32" />
+
+    <!-- P Stem (Cyan Gradient) -->
+    <rect x="268" y="174" width="32" height="164" rx="16" fill="url(#cyanStem)" />
+
+    <!-- P Loop (White) -->
+    <rect x="268" y="174" width="112" height="100" rx="50" fill="none" stroke="#ffffff" stroke-width="32" />
+  </g>
+</svg>
